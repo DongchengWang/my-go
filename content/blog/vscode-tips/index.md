@@ -1,7 +1,7 @@
 ---
 title: 前端开发神器 VSCode 使用总结
 date: "2018-01-14T20:17:03.284Z"
-description: 前端开发神器 VSCode 使用总结
+description: ""
 ---
 
 > VSCode 是微软出品的，基于 Electron 和 TypeScript 的，集成了 git 版本管理和命令行终端，而且开源稳定，插件丰富，再搭配一款 Chrome 浏览器，可以说是`前端开发神器`了。

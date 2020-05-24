@@ -1,7 +1,7 @@
 ---
 title: Python 一键安装全部依赖包
 date: "2017-10-15T01:25:37.121Z"
-description: Python 一键安装全部依赖包
+description: ""
 ---
 
 ## 使用 pip

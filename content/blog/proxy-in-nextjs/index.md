@@ -1,7 +1,7 @@
 ---
 title: Next.js 配置接口跨域代理转发
 date: "2019-11-11T22:20:03.284Z"
-description: Next.js 配置接口跨域代理转发
+description: ""
 ---
 
 使用 create-next-app 创建的 Next.js 项目配置接口跨域代理转发需要用到 custom server 功能。

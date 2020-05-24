@@ -1,7 +1,7 @@
 ---
 title: JavaScript 浅复制和深复制
 date: "2019-09-28T20:54:32.169Z"
-description: JavaScript 浅复制和深复制
+description: ""
 ---
 
 浅复制只会复制第一层的元素，嵌套的元素还是原来的引用。

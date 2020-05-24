@@ -1,7 +1,7 @@
 ---
-title: 使用 Jest 进行愉快的 JavaScript(TypeScript) 测试
+title: 使用 Jest 进行愉快的 JavaScript/TypeScript 测试
 date: "2018-01-14T21:02:37.121Z"
-description: 使用 Jest 进行愉快的 JavaScript(TypeScript) 测试
+description: ""
 ---
 
 > 一般我们不管是做前端还是后端，为了提高代码的质量，会选择一种测试驱动开发（TDD）的办法来写代码进行单元测试。Jest 是 Facebook 团队开发的一款测试框架，为的是提高开发者的“开发体验”。我们做单元测试的时候需要分解出一个个独立的模块，但是这样做要写很多的 mock 代码（模拟的辅助函数），非常地繁琐，这是行业的一个“痛点”。如果你和我一样很懒，而且认同“懒惰即是美德”、“不要重复你自己（DRY）”这些原则的话，那么 Jest 测试框架就是你最好的选择。如果你用过一些其他测试框架比如 Mocha 和 Jasmine 的话，看一下 Jest 文档就马上会用了。

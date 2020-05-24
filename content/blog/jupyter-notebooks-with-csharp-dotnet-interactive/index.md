@@ -1,7 +1,7 @@
 ---
 title: 基于 Jupyter Notebooks 的 C#/.NET Interactive 安装与使用
 date: "2019-11-06T09:10:03.284Z"
-description: 基于 Jupyter Notebooks 的 C#/.NET Interactive 安装与使用
+description: ""
 ---
 
 .NET Interactive发布预览版了，可以像Python那样用jupyter notebooks来编辑C#代码。具体可以在GitHub上查看[dotnet/interactive](https://github.com/dotnet/interactive)项目。

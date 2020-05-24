@@ -1,7 +1,7 @@
 ---
 title: 学习 Vim 命令总结
 date: "2019-09-28T20:54:03.284Z"
-description: 学习 Vim 命令总结
+description: ""
 ---
 
 > 可以使用 vscode-vim 扩展，但是要注意一些ctrl+字母的快捷键会无效，必须去掉冲突的快捷键

@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 安装 C# 语言开发环境
 date: "2019-10-29T10:37:32.169Z"
-description: Ubuntu 安装 C# 语言开发环境
+description: ""
 ---
 
 ## 使用 Bash 自动化安装

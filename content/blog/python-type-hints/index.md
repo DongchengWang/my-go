@@ -1,7 +1,7 @@
 ---
 title: Python 静态类型检查 mypy 示例
 date: "2019-09-28T20:55:37.121Z"
-description: Python 静态类型检查 mypy 示例
+description: ""
 ---
 
 > 以下所有例子都参考了最新版本的 Python 文档与 mypy 文档

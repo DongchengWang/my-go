@@ -1,7 +1,7 @@
 ---
 title: 为什么我不建议在 C# 中用下划线 _ 开头来表示私有字段
 date: "2020-02-27T23:18:37.121Z"
-description: 为什么我不建议在 C# 中用下划线 _ 开头来表示私有字段
+description: ""
 ---
 
 我在C#官方文档的[使用属性](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/using-properties)里看到这种代码：

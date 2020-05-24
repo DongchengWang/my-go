@@ -1,7 +1,7 @@
 ---
 title: 在 Nest.js 中使用 MongoDB 与 TypeORM
 date: "2019-09-28T20:54:03.284Z"
-description: 在 Nest.js 中使用 MongoDB 与 TypeORM
+description: ""
 ---
 
 首先要在 database 文件夹里建立DatabaseModule模块文件，
