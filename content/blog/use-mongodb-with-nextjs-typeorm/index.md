@@ -6,7 +6,7 @@ description: 在 Nest.js 中使用 MongoDB 与 TypeORM
 
 首先要在 database 文件夹里建立DatabaseModule模块文件，
 
-```javascript
+```typescript
 // database/database.module.ts
 import { Module } from "@nestjs/common";
 import { databaseProviders } from "./database.providers";
@@ -20,7 +20,7 @@ export class DatabaseModule {}
 
 还有databaseProviders，要注意根据情况配置好端口、数据库名等等信息，
 
-```javascript
+```typescript
 // database/database.providers.ts
 import { createConnection } from "typeorm";
 
@@ -42,7 +42,7 @@ export const databaseProviders = [
 
 然后在一个需要用到 MongoDB 的模块里导入DatabaseModule，我这里用的是LoginModule，
 
-```javascript
+```typescript
 // login/login.module.ts
 import { Module } from "@nestjs/common";
 import { DatabaseModule } from "../database/database.module";
@@ -60,7 +60,7 @@ export class LoginModule {}
 
 定义好你的数据实体，
 
-```javascript
+```typescript
 // login/login.entity.ts
 import { Entity, Column, ObjectID, ObjectIdColumn } from "typeorm";
 
@@ -74,7 +74,7 @@ export class User {
 
 在loginProviders里注入，
 
-```javascript
+```typescript
 // login/login.providers.ts
 import { Connection, getMongoRepository } from "typeorm";
 import { User } from "./login.entity";
@@ -92,10 +92,10 @@ export const loginProviders = [
 
 在LoginService里面引入，
 
-```javascript
-import { Injectable, Inject } from "@nestjs/common"
-import { MongoRepository } from "typeorm"
-import { User } from "./login.entity"
+```typescript
+import { Injectable, Inject } from "@nestjs/common";
+import { MongoRepository } from "typeorm";
+import { User } from "./login.entity";
 
 @Injectable()
 export class LoginService {
@@ -108,7 +108,7 @@ export class LoginService {
 
     // 数据库的操作交给service来提供
     async findAll(): Promise<User[]> {
-        return await this.loginRepository.find()
+        return await this.loginRepository.find();
     }
 }
 ```
