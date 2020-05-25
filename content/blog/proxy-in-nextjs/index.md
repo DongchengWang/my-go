@@ -15,9 +15,9 @@ yarn add express http-proxy-middleware
 
 ```javascript
 // server.js
-const express = require("express");
 const next = require("next");
-const proxyMiddleware = require("http-proxy-middleware");
+const express = require("express");
+const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const devProxy = {
     "/api": {
@@ -29,7 +29,7 @@ const devProxy = {
     }
 };
 
-const port = parseInt(process.env.PORT, 10) || 3000;
+const port = Number.parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== "production";
 const app = next({
     dev
@@ -40,8 +40,8 @@ app.prepare().then(() => {
     const server = express();
 
     if (dev && devProxy) {
-        Object.keys(devProxy).forEach(function(context) {
-            server.use(proxyMiddleware(context, devProxy[context]));
+        Object.keys(devProxy).forEach(function (context) {
+            server.use(createProxyMiddleware(context, devProxy[context]));
         });
     }
 
@@ -59,6 +59,7 @@ app.prepare().then(() => {
     console.log("An error occurred, unable to start the server");
     console.log(err);
 });
+
 ```
 
 相应地修改 package.json

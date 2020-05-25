@@ -4,7 +4,7 @@ date: "2019-09-28T20:54:03.284Z"
 description: ""
 ---
 
-首先要在 database 文件夹里建立DatabaseModule模块文件，
+首先要在 database 文件夹里建立 DatabaseModule 模块文件，
 
 ```typescript
 // database/database.module.ts
@@ -18,7 +18,7 @@ import { databaseProviders } from "./database.providers";
 export class DatabaseModule {}
 ```
 
-还有databaseProviders，要注意根据情况配置好端口、数据库名等等信息，
+还有 databaseProviders，要注意根据情况配置好端口、数据库名等等信息，
 
 ```typescript
 // database/database.providers.ts
@@ -40,7 +40,7 @@ export const databaseProviders = [
 ];
 ```
 
-然后在一个需要用到 MongoDB 的模块里导入DatabaseModule，我这里用的是LoginModule，
+然后在一个需要用到 MongoDB 的模块里导入 DatabaseModule，我这里用的是 LoginModule，
 
 ```typescript
 // login/login.module.ts
@@ -90,7 +90,7 @@ export const loginProviders = [
 ];
 ```
 
-在LoginService里面引入，
+在 LoginService 里面引入，
 
 ```typescript
 import { Injectable, Inject } from "@nestjs/common";
@@ -113,4 +113,4 @@ export class LoginService {
 }
 ```
 
-最后就可以在LoginController里面使用了！
+最后就可以在 LoginController 里面使用了！

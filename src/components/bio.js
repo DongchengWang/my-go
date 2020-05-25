@@ -57,11 +57,14 @@ const Bio = () => {
                 }} />
             <p>
                 Written by <strong>{author.name}</strong> {author.summary}
-                {` `}
                 You should not follow him on
                 <a href={`https://twitter.com/${social.twitter}`}> Twitter </a>
                 or
-                <a href={`https://github.com/${social.github}`}> GitHub.</a>
+                <a href={`https://github.com/${social.github}`}> GitHub</a>
+                {`. `}
+                If you find anything interesting, you can neither write a blog to reply nor file an issue on
+                <a href={`https://github.com/${social.github}/my-blog`}> my-blog</a>
+                {`. `}
             </p>
         </div>
     );

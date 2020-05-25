@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Yugoxx's Blog`,
+    title: `Yugoxx's Little Blog`,
     author: {
       name: `DongchengWang`,
-      summary: `who lives and works in Shenzhen building meaningless things.`,
+      summary: `who lives and works in Shenzhen building meaningless(meaning is meaningless) things. `,
     },
     description: `A personal blog demonstrating what Gatsby can do.`,
     siteUrl: `http://blog.pythonking.top/`,
@@ -79,6 +79,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
