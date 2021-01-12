@@ -14,34 +14,31 @@ const Layout = ({ location, title, children }) => {
                     ...scale(1.5),
                     marginBottom: rhythm(1.5),
                     marginTop: 0
-                }}
-            >
+                }}>
                 <Link
                     style={{
                         boxShadow: `none`,
                         color: `inherit`
                     }}
-                    to={`/`}
-                >
+                    to={`/`}>
                     {title}
                 </Link>
             </h1>
         );
-    } else {
+    }
+    else {
         header = (
             <h3
                 style={{
                     fontFamily: `Montserrat, sans-serif`,
                     marginTop: 0
-                }}
-            >
+                }}>
                 <Link
                     style={{
                         boxShadow: `none`,
                         color: `inherit`
                     }}
-                    to={`/`}
-                >
+                    to={`/`}>
                     {title}
                 </Link>
             </h3>
@@ -58,19 +55,14 @@ const Layout = ({ location, title, children }) => {
         >
             <header>{header}</header>
             <main>{children}</main>
-            <footer style={{ margin: "auto", textAlign: "center" }}>
+            <footer>
                 <div>
                     © {new Date().getFullYear()}, Built with
                     {` `}
                     <a href="https://www.gatsbyjs.org">Gatsby</a>
                 </div>
-                <div>
-                    备案编号：
-                    <a href="https://beian.miit.gov.cn">
-                        粤 ICP 备 18141697 号
-                    </a>
-                </div>
-                <div>信息产业部备案管理系统</div>
+                <div>备案编号：粤 ICP 备 18141697 号</div>
+                <div><a href="http://www.beian.miit.gov.cn">信息产业部备案管理系统</a></div>
             </footer>
         </div>
     );

@@ -58,7 +58,7 @@ const Layout = ({ location, title, children }) => {
         >
             <header>{header}</header>
             <main>{children}</main>
-            <footer style={{ margin: "auto", textAlign: "center" }}>
+            <footer>
                 <div>
                     © {new Date().getFullYear()}, Built with
                     {` `}
@@ -66,7 +66,7 @@ const Layout = ({ location, title, children }) => {
                 </div>
                 <div>
                     备案编号：
-                    <a href="https://beian.miit.gov.cn">
+                    <a href="http://www.beian.miit.gov.cn">
                         粤 ICP 备 18141697 号
                     </a>
                 </div>

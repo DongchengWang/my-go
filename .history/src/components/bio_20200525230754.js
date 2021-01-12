@@ -13,28 +13,28 @@ import { rhythm } from "../utils/typography";
 
 const Bio = () => {
     const data = useStaticQuery(graphql`
-        query BioQuery {
-            avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
-                childImageSharp {
-                    fixed(width: 50, height: 50) {
-                        ...GatsbyImageSharpFixed
-                    }
-                }
-            }
-            site {
-                siteMetadata {
-                    author {
-                        name
-                        summary
-                    }
-                    social {
-                        twitter
-                        github
-                    }
-                }
-            }
+    query BioQuery {
+      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
         }
-    `);
+      }
+      site {
+        siteMetadata {
+          author {
+            name
+            summary
+          }
+          social {
+            twitter
+            github
+          }
+        }
+      }
+    }
+  `);
 
     const { author, social } = data.site.siteMetadata;
     return (
@@ -42,8 +42,7 @@ const Bio = () => {
             style={{
                 display: `flex`,
                 marginBottom: rhythm(2.5)
-            }}
-        >
+            }}>
             <Image
                 fixed={data.avatar.childImageSharp.fixed}
                 alt={author.name}
@@ -55,8 +54,7 @@ const Bio = () => {
                 }}
                 imgStyle={{
                     borderRadius: `50%`
-                }}
-            />
+                }} />
             <p>
                 Written by <strong>{author.name}</strong> {author.summary}
                 You should not follow him on
@@ -64,12 +62,8 @@ const Bio = () => {
                 or
                 <a href={`https://github.com/${social.github}`}> GitHub</a>
                 {`. `}
-                If you find anything interesting, you can neither write a blog
-                to reply nor file an issue on
-                <a href={`https://github.com/${social.github}/my-blog`}>
-                    {" "}
-                    my-blog
-                </a>
+                If you find anything interesting, you can neither write a blog to reply nor file an issue on
+                <a href={`https://github.com/${social.github}/my-blog`}> my-blog</a>
                 {`. `}
             </p>
         </div>

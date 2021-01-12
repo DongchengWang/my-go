@@ -4,7 +4,7 @@ date: "2020-02-27T23:18:37.121Z"
 description: ""
 ---
 
-我在C#官方文档的[使用属性](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/using-properties)里看到这种代码：
+我在C#官方文档的 [使用属性](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/using-properties) 里看到这种代码：
 
 ```csharp
 public class Date
@@ -25,13 +25,13 @@ public class Date
 }
 ```
 
-这段代码里的`_month`是以下划线开头的，用来表示private。这样做会有什么问题呢？
+这段代码里的 `_month` 是以下划线开头的，用来表示 private。这样做会有什么问题呢？
 
 * 项目混合使用了驼峰命名法与下划线命名法，扰乱了阅读代码的视线
-* 不像其他语言（比如JavaScript），C#本身已经提供了private修饰符，不需要再用下划线`_`重复表示private
-* 下划线`_`已经用来表示[弃元](https://docs.microsoft.com/zh-cn/dotnet/csharp/discards)的功能了，是不是会造成混淆呢？
+* 不像其他语言（比如 JavaScript），C#本身已经提供了private修饰符，不需要再用下划线 `_` 重复表示 private
+* 下划线 `_` 已经用来表示 [弃元](https://docs.microsoft.com/zh-cn/dotnet/csharp/discards) 的功能了，是不是会造成混淆呢？
 
-实际上我简单地使用驼峰命名法，不用下划线`_`开头，也不会有什么问题。代码如下：
+实际上我简单地使用驼峰命名法，不用下划线 `_` 开头，也不会有什么问题。代码如下：
 
 ```csharp
 public class Date
@@ -52,7 +52,7 @@ public class Date
 }
 ```
 
-这样看起来更简洁，更容易理解了。下面同样来自官方文档的[自动实现的属性](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)里的代码就很不错：
+这样看起来更简洁，更容易理解了。下面同样来自官方文档的 [自动实现的属性](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) 里的代码就很不错：
 
 ```csharp
 // This class is mutable. Its data can be modified from
@@ -83,7 +83,7 @@ class Program
 {
     static void Main()
     {
-        // Intialize a new object.
+        // Initialize a new object.
         Customer cust1 = new Customer(4987.63, "Northwind", 90108);
 
         // Modify a property.
@@ -92,6 +92,6 @@ class Program
 }
 ```
 
-事实上，只使用驼峰命名法，不要暴露字段而是使用属性与get/set访问器，或者是单纯地起个更好的变量名，你总是可以找到办法来避免用下划线`_`开头。
+事实上，只使用驼峰命名法，不要暴露字段而是使用属性与 get/set 访问器，或者是单纯地起个更好的变量名，你总是可以找到办法来避免用下划线 `_` 开头。
 
-当然啦，如果你的项目早就已经采用了[微软推荐的代码风格](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md)，那就要和项目保持一致。
+当然啦，如果你的项目早就已经采用了 [微软推荐的代码风格](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md)，那就要和项目保持一致。
