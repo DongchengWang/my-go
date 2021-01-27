@@ -13,13 +13,13 @@ const Layout = ({ location, title, children }) => {
                 style={{
                     ...scale(1.5),
                     marginBottom: rhythm(1.5),
-                    marginTop: 0
+                    marginTop: 0,
                 }}
             >
                 <Link
                     style={{
                         boxShadow: `none`,
-                        color: `inherit`
+                        color: `inherit`,
                     }}
                     to={`/`}
                 >
@@ -32,13 +32,13 @@ const Layout = ({ location, title, children }) => {
             <h3
                 style={{
                     fontFamily: `Montserrat, sans-serif`,
-                    marginTop: 0
+                    marginTop: 0,
                 }}
             >
                 <Link
                     style={{
                         boxShadow: `none`,
-                        color: `inherit`
+                        color: `inherit`,
                     }}
                     to={`/`}
                 >
@@ -53,7 +53,7 @@ const Layout = ({ location, title, children }) => {
                 marginLeft: `auto`,
                 marginRight: `auto`,
                 maxWidth: rhythm(24),
-                padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
+                padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             }}
         >
             <header>{header}</header>
@@ -65,12 +65,15 @@ const Layout = ({ location, title, children }) => {
                     <a href="https://www.gatsbyjs.org">Gatsby</a>
                 </div>
                 <div>
-                    备案编号：
-                    <a href="https://beian.miit.gov.cn">
-                        粤 ICP 备 18141697 号
+                    <span>备案编号ICP证：</span>
+                    <a
+                        href="https://beian.miit.gov.cn"
+                        target="_blank"
+                        style={{ color: "orange" }}
+                    >
+                        粤ICP备18141697号
                     </a>
                 </div>
-                <div>信息产业部备案管理系统</div>
             </footer>
         </div>
     );
