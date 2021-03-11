@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(reflect.TypeOf("hh"))
+	fmt.Println(reflect.TypeOf("hso"))
 }
