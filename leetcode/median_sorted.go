@@ -13,7 +13,7 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	}
 }
 
-func getKthElement(nums1, nums2 []int, k int) int {
+func getKthElement(nums1 []int, nums2 []int, k int) int {
 	index1, index2 := 0, 0
 	for {
 		if index1 == len(nums1) {
