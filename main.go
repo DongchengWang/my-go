@@ -1,10 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"reflect"
+	"mygo/gee"
 )
 
 func main() {
-	fmt.Println(reflect.TypeOf("hso"))
+	gee.Start()
 }
