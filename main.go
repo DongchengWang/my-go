@@ -1,9 +1,9 @@
 package main
 
 import (
-	"mygo/gee"
+	"fmt"
 )
 
 func main() {
-	gee.Start()
+	fmt.Println("hso")
 }
