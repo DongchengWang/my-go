@@ -10,12 +10,12 @@ func twoSum(numbers []int, target int) []int {
 
 	for left < right {
 		sum := numbers[left] + numbers[right]
-		if target < sum {
-			right--
-		} else if target > sum {
+		if sum == target {
+			return []int{left + 1, right + 1}
+		} else if sum < target {
 			left++
 		} else {
-			return []int{left + 1, right + 1}
+			right--
 		}
 	}
 
