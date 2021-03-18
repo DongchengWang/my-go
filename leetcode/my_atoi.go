@@ -27,6 +27,7 @@ func (a *automaton) Init() {
 		"end":       {"end", "end", "end", "end"},
 	}
 	a.sign = 1
+	a.sum = 0
 }
 
 func (a *automaton) GetCol(c rune) int {
