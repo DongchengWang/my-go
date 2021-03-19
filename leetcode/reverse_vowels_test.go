@@ -7,5 +7,7 @@ import (
 )
 
 func TestReverseVowels(t *testing.T) {
-	assert.Equal(t, 1, 1)
+	got := reverseVowels("leetcode")
+	want := "leotcede"
+	assert.Equal(t, want, got)
 }
